@@ -1,0 +1,98 @@
+Xcursor*theme: Vanilla-DMZ-AA
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+
+URxvt*font: xft:monaco:pixelsize=14
+URxvt*boldFont: xft:monaco:pixelsize=14
+URxvt*scrollBar: false
+URxvt*saveLines: 32767
+URxvt.colorUL: #a9c9bc
+URxvt*cursorColor: orange
+URxvt*cursorBlink: true
+URxvt*geometry: 90x26
+URxvt*title: rxvt-256color
+URxvt*tintColor: #636363
+URxvt*shading: 100
+URxvt*transparent: true
+URxvt*pastableTabs: true
+URxvt*jumpScroll: true
+URxvt*secondaryScroll: true
+URxvt*urgentOnBell: true
+
+URxvt*perl-lib: /usr/lib/urxvt/perl/
+URxvt*perl-ext-common: default,url-select
+URxvt*url-launcher: firefox
+URxvt*keysym.C-comma: perl:url-select:select_next
+URxvt*url-select.launcher: firefox
+URxvt*url-select.underline: true
+URxvt*url-select.button: 1
+
+XTerm*font: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+XTerm*boldFont: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
+XTerm*boldMode: false
+XTerm*scrollBar: false
+XTerm*saveLines: 32767
+XTerm*borderLess: true
+XTerm*cursorColor: orange
+XTerm*cursorBlink: true
+XTerm*pastableTabs: true
+XTerm*jumpScroll: true
+
+pianobar*font: -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
+pianobar*boldFont: -*-monofur-medium-r-*-*-30-*-*-*-*-*-*-*
+pianobar*foreground: #a6a6a6
+pianobar*urgentOnBell: true
+
+scratch*font: -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
+scratch*boldFont: -*-ubuntu mono-medium-r-*-*-40-*-*-*-*-*-*-*
+scratch*boldMode: false
+scratch*scrollBar: false
+scratch*saveLines: 32767
+scratch*borderLess: true
+scratch*cursorColor: orange
+scratch*cursorBlink: true
+scratch*pastableTabs: true
+scratch*jumpScroll: true
+
+alsamixer*scrollBar: false
+
+! Xoria256 {{{
+*foreground: #bcbcbc
+*background: #1a1a1a
+!black
+*color0: #1a1a1a
+*color8: #808080
+!red
+*color1: #df8787
+*color9: #b56e6e
+!green
+*color2: #9ece9e
+*color10: #c4edc4
+!yellow
+*color3: #ffffaf
+*color11: #d6d693
+!blue
+*color4: #87afdf
+*color12: #6e8eb5
+!magenta
+*color5: #dfaf87
+*color13: #b58e6e
+!cyan
+*color6: #afafdf
+*color14: #8e8eB5
+!white
+*color7: #d0d0d0
+*color15: #e2e2e5
+! }}}
+
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/dddd
+! Xresources file
+!
+URxvt*.transparent: true
+URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+!URxvt*.shading: 110
