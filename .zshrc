@@ -1,11 +1,19 @@
 autoload colors
 colors
-export MANPATH=$MANPATH:/usr/local/texlive/2013/texmf-dist/doc/man
-export INFOPATH=$INFOPATH:/usr/local/texlive/2013/texmf-dist/doc/info
-export PYTHONPATH=/usr/lib/python3.4/site-packages
+############ beginning of latex environment variables ###########################
+# I installed LaTeX from texlive manaually, so the environment variables are set here. 
+#export MANPATH=$MANPATH:/usr/local/texlive/2013/texmf-dist/doc/man
+#export INFOPATH=$INFOPATH:/usr/local/texlive/2013/texmf-dist/doc/info
+#export PYTHONPATH=/usr/lib/python3.4/site-packages
+############ end of latex environment variables ##################################
+
+############ begin of fcitx ######################################################
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
+############ end of fcitx ########################################################
+
+# Chinese support
 export LANG=en_US.UTF-8
 export LC_CTYPE=zh_CN.UTF-8
 export XDG_CONFIG_DIRS="/etc"
@@ -15,6 +23,7 @@ export EDITOR="vim"
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=lcd_hrgb'
 export JAVA_FONTS=/usr/share/fonts/TTF
 export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+
 export HISTSIZE=100000000
 export SAVEHIST=100000000
 export HISTFILE=~/.history
@@ -24,6 +33,8 @@ setopt HIST_IGNORE_DUPS
 setopt EXTENDED_HISTORY
 setopt complete_in_word
 setopt extended_glob
+
+# colorscheme set
 TOKENS_FOLLOWED_BY_COMMANDS=('|' '||' ';' '&' '&&' 'sudo' 'do' 'time' 'strace')
 recolor-cmd() {
     region_highlight=()
@@ -51,6 +62,7 @@ recolor-cmd() {
     done                                                
 }                                                       
 
+# every directory has its own histfile
 cd() {
     builtin cd "$@"
     fc -W
