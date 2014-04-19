@@ -6,7 +6,10 @@ It is highly recommended that you install [zsh](http://www.zsh.org) first.
 
 ```
 $ git clone https://github.com/lovelock/linuxdots.git
-$ mv linuxdots/* ~/.
+$ cd linuxdots
+$ git submodule init && git submodule update
+$ mv .* ~/.
+$ cd ..
 $ rm -rf linuxdots
 $ source ~/.zshrc
 ```
