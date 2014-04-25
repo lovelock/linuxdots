@@ -6,8 +6,9 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 
-URxvt*font: xft:monaco:pixelsize=14
-URxvt*boldFont: xft:monaco:pixelsize=14
+URxvt.meta8: True
+URxvt*font: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+URxvt*fontBold: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
 URxvt*scrollBar: false
 URxvt*saveLines: 32767
 URxvt.colorUL: #a9c9bc
