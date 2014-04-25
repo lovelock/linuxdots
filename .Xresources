@@ -25,12 +25,21 @@ URxvt*secondaryScroll: true
 URxvt*urgentOnBell: true
 
 URxvt*perl-lib: /usr/lib/urxvt/perl/
-URxvt*perl-ext-common: default,url-select
+URxvt.perl-ext-common: ...,keyboard-select
+URxvt.keysys.M-Escape: perl:keyboard-select:active
+URxvt.keysym.M-S: perl:keyboard-select:search
+
+URxvt.perl-ext-common: ...,url-select
+URxvt.keysym.M-U: perl:url-select:select_next
 URxvt*url-launcher: firefox
-URxvt*keysym.C-comma: perl:url-select:select_next
 URxvt*url-select.launcher: firefox
 URxvt*url-select.underline: true
 URxvt*url-select.button: 1
+
+URxvt.perl-ext-common: ...,clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-c-v: perl:clipboard:paste_escaped
 
 XTerm*font: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
 XTerm*boldFont: -*-ubuntu mono-medium-r-*-*-30-*-*-*-*-*-*-*
