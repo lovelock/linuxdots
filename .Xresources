@@ -7,8 +7,11 @@ Xft.hintstyle: hintslight
 Xft.rgba: rgb
 
 URxvt.meta8: True
-URxvt*font: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
-URxvt*fontBold: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+!URxvt*font: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+!URxvt*fontBold: xft:Monaco:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+URxvt*font: xft:Meslo LG L for Powerline:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+URxvt*fontBold: xft:Meslo LG L for Powerline:size=14,antialias=True,xft:WenQuanYi Zen Hei Mono:size=15:antialias=True
+
 URxvt*scrollBar: false
 URxvt*saveLines: 32767
 URxvt.colorUL: #a9c9bc
@@ -25,18 +28,14 @@ URxvt*secondaryScroll: true
 URxvt*urgentOnBell: true
 
 URxvt*perl-lib: /usr/lib/urxvt/perl/
-URxvt.perl-ext-common: ...,keyboard-select
+URxvt.perl-ext-common: keyboard-select,url-select,clipboard
 URxvt.keysys.M-Escape: perl:keyboard-select:active
 URxvt.keysym.M-S: perl:keyboard-select:search
-
-URxvt.perl-ext-common: ...,url-select
 URxvt.keysym.M-U: perl:url-select:select_next
 URxvt*url-launcher: firefox
 URxvt*url-select.launcher: firefox
 URxvt*url-select.underline: true
 URxvt*url-select.button: 1
-
-URxvt.perl-ext-common: ...,clipboard
 URxvt.keysym.M-c: perl:clipboard:copy
 URxvt.keysym.M-v: perl:clipboard:paste
 URxvt.keysym.M-c-v: perl:clipboard:paste_escaped
